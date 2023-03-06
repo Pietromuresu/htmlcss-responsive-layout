@@ -27,14 +27,24 @@
 }
 
 .button {
-  width: 50px;
+  height: fit-content;
+  display: flex;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.white {
+  background-color: white;
+}
+.purple {
+  background-color: #9792E4;
 }
 /* /General */
 
 
 /* Header */
 header {
-  background-color: rgba(0, 0, 255, 0.368);
+  background-color: #0084FD;
 }
 
 header .container{
@@ -44,16 +54,46 @@ header .container{
   height: 70px;
 }
 
-header .menu-right {
-  width: 50%;
-  height: 100%;
-  background-color: #d37b7b6b;
-  display: none;
+
+header .logo {
+  width: 30%;
+}
+header .logo img {
+  
+  height: 40px
+;
 }
 
-header .side-menu {
+header .menu-right {
+  justify-content: flex-end;
+  width: 70%;
   height: 100%;
+  z-index: -1;
+} 
 
+header .menu-right nav ul {
+  list-style: none;
+}
+
+header .menu-right nav ul li a{
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  line-height: 70px;
+}
+
+header .menu-right nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header .menu-right .button {
+  align-self: center;
+}
+
+header .side-menu i{
+  height: 100%;
+  font-size: 30px;
+  color: white;
 /* debug */
   width: 70px
 }
@@ -262,7 +302,7 @@ main .container .card {
   }
 
   header .menu-right {
-    display: block;
+    z-index: 1;
   }
 
   header .side-menu {
