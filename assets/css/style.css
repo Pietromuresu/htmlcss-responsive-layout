@@ -12,6 +12,10 @@
   margin-top: 50px;
 }
 
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -100,6 +104,28 @@ main .container .card {
 }
 
 
+.testimonial .intestazione {
+  width: 100%;
+  height: 200px;
+}
+
+.testimonial .card {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.testimonial .card .img {
+  height: 40%;
+}
+.benefits .container .text {
+  height: 50px;
+  
+}
+
+.benefits .container-cards .card {
+  height: 300px;
+}
 /* /Main */
 
 
@@ -108,7 +134,10 @@ main .container .card {
 /* Responsive */
 
 @media screen and (min-width: 480px ){
-  main .container .card{
+  .section-demo .container .card{
+    width: calc(90% / 3);
+  }
+  .section-demo .container .row .card{
     width: calc(90% / 3);
   }
 
@@ -125,6 +154,26 @@ main .container .card {
   main .container .row .card {
     height: 560px;
   }
+
+  main .testimonial .card {
+    width: 100%;
+    height: 200px;
+  }
+
+  .testimonial .card .img {
+    height: 100%;
+    width: 30%;
+  }
+
+  .benefits .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .benefits .container-cards .card{
+    width: 45%;
+  }
+
 }
 
 @media screen and (min-width:786px) {
@@ -153,15 +202,15 @@ main .container .card {
     display: flex;
   }
 
-  main .container .card-big {
+  .section-demo .container .card-big {
     height: 330px;
   }
   
-  main .container .row .card {
+  .section-demo .container .row .card {
     height: 330px;
   }
   
-  main .container .card {
+  .section-demo .container .card {
     height: 330px;
   }
 
@@ -171,6 +220,14 @@ main .container .card {
 
   main .section-2 .left {
     width: 50%;
+  }
+
+  .benefits .container-cards {
+    flex-wrap: wrap;
+  }
+
+  .benefits .container-cards .card{
+    width: calc(90% / 3);
   }
 }
 /* /Responsive */
