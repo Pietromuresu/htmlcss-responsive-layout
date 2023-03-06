@@ -3,3 +3,61 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.d-flex {
+  display: flex;
+}
+
+
+.debug {
+  border: 1px solid black;
+  background-color: rgba(164, 99, 99, 0.355);
+}
+
+.button {
+  width: 50px;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 0, 255, 0.368);
+}
+
+header .container{
+  align-items: center ;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+}
+
+header .menu-right {
+  width: 50%;
+  height: 100%;
+  background-color: #d37b7b6b;
+  display: none;
+}
+
+header .side-menu {
+  height: 100%;
+
+/* debug */
+  width: 70px
+}
+
+
+/* /Header */
+
+
+/* Responsive */
+
+@media  screen and (min-width:786px) {
+  header .menu-right {
+    display: block;
+
+  }
+  header .side-menu {
+    display: none;
+
+  }
+}
+/* /Responsive */
