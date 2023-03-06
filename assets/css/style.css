@@ -39,6 +39,10 @@
 .purple {
   background-color: #9792E4;
 }
+
+.blue {
+  background-color: #0084FD;
+}
 /* /General */
 
 
@@ -93,9 +97,8 @@ header .menu-right .button {
 header .side-menu i{
   height: 100%;
   font-size: 30px;
+  justify-content: flex-end;
   color: white;
-/* debug */
-  width: 70px
 }
 /* /Header */
 
@@ -110,26 +113,76 @@ main .container {
 }
 
 main .container .row {
+  width: 100%;
   flex-wrap: wrap;
 }
 
 main .container .card-big {
-  width: 100% ;
   
-  margin: 10px auto;
   flex-wrap: wrap;
-  /* debug */
-  height: 600px;
-  border: 1px solid black;
+  border-radius: 20px;
+  width: 100% ;
+  margin: 10px auto;
+  padding: 20px;
+  padding-bottom: 0;
+ 
+  
+  background-color:  #B5DDFF;
+}
 
+main .container .card-big .phone {
+  margin: 0 auto;
+  margin-top: 60px;
+  
+}
+
+main .container .card-big .phone img {
+  width: 200px;
+}
+
+main .container .card-big .text h2 {
+  color: #0084FD;
+  display: block;
+  margin-bottom: 20px;
+}
+
+main .container .card-big .text p {
+  line-height: 1.8rem;
+}
+
+main .container .card-big .button{
+
+  color: white;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 5px 40px;
 }
 
 main .container .card {
+  background-color: #B5DDFF;
+  text-align: center;
+  padding: 20px;
   width: 100%;
-  height: 330px;
+
   margin: 10px auto;
+  border-radius: 20px;
 }
 
+main .container .card i {
+  color: #0084FD;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+main .container .card h3 {
+  color: #0084FD;
+  margin-bottom: 20px;
+}
+
+main .container .card p {
+  line-height: 1.8rem;
+}
 
 /* Section 2 */
 .section-2 .container{
@@ -224,17 +277,25 @@ main .container .card {
   .section-demo .container .card{
     width: calc(90% / 3);
   }
+
   .section-demo .container .row .card{
-    width: calc(90% / 3);
+    width: 30%;
+    
+  }
+
+ 
+
+  .section-demo .container .row .phone {
+    width: 50%;    
   }
 
   main .container .row {
   flex-wrap: wrap;
   }
 
-
   main .container .card-big {
-    height: 560px;
+  
+    
     width: 63%;
   }
 
@@ -309,18 +370,26 @@ main .container .card {
     display: none;
   }
  /* section demo  */
-  .card-big .text{
-    width: 50%;
-    display: flex;
-  }
-
-  .card-big .phone{
-    display: flex;
-  }
-
   .section-demo .container .card-big {
     height: 330px;
   }
+
+ .container .row .text  {
+    width: 50%;
+  }
+
+  .container .row .text .button {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .section-demo .card-big .phone {
+    width: 50%;
+  
+  }
+
+  
+
   
   .section-demo .container .row .card {
     height: 330px;
