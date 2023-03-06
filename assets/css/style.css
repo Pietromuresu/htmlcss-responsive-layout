@@ -8,6 +8,10 @@
   display: flex;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
 
 .debug {
   border: 1px solid black;
@@ -43,14 +47,74 @@ header .side-menu {
 /* debug */
   width: 70px
 }
-
-
 /* /Header */
+
+
+/* Main */
+
+
+main .container {
+  height: 100%;
+  flex-wrap: wrap;
+
+}
+
+main .container .row {
+  flex-wrap: wrap;
+}
+
+main .container .card-big {
+  width: 100% ;
+  
+  margin: 10px auto;
+  flex-wrap: wrap;
+  /* debug */
+  height: 600px;
+  border: 1px solid black;
+
+}
+
+main .container .card {
+  width: 100%;
+  height: 330px;
+  margin: 10px auto;
+}
+
+
+/* /Main */
+
+
 
 
 /* Responsive */
 
-@media  screen and (min-width:786px) {
+@media screen and (min-width: 480px ){
+  main .container .card{
+    width: calc(90% / 3);
+  }
+
+  main .container .row {
+  flex-wrap: wrap;
+  }
+
+
+  main .container .card-big {
+    height: 560px;
+    width: 63%;
+  }
+
+  main .container .row .card {
+    height: 560px;
+  }
+}
+
+@media screen and (min-width:786px) {
+
+
+  header .container {
+    width: 90%;
+  }
+
   header .menu-right {
     display: block;
 
@@ -58,6 +122,17 @@ header .side-menu {
   header .side-menu {
     display: none;
 
+  }
+
+
+  main .container .card-big {
+    height: 330px;
+  }
+  main .container .card {
+    height: 330px;
+  }
+  main .container .row .card {
+    height: 330px;
   }
 }
 /* /Responsive */
