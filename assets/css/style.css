@@ -126,6 +126,17 @@ main .container .card {
 .benefits .container-cards .card {
   height: 300px;
 }
+
+.about-us .container .col-left {
+  width: 100%;
+  height: 500px;
+}
+
+.about-us .container .col-right {
+  width: 100%;
+  height: 500px;
+
+}
 /* /Main */
 
 
@@ -173,7 +184,17 @@ main .container .card {
   .benefits .container-cards .card{
     width: 45%;
   }
+  .about-us .container {
+    display: flex;
+  }
 
+  .about-us .container .col-left {
+    width: 60%;
+  }
+
+  .about-us .container .col-right {
+    width: 35%;
+  }
 }
 
 @media screen and (min-width:786px) {
