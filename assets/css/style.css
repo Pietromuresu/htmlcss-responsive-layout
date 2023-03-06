@@ -8,6 +8,10 @@
   display: flex;
 }
 
+.margin-top-50 {
+  margin-top: 50px;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -30,7 +34,7 @@ header {
 header .container{
   align-items: center ;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
   height: 70px;
 }
 
@@ -80,6 +84,21 @@ main .container .card {
   margin: 10px auto;
 }
 
+.section-2 .container{
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.section-2 .left{
+  width: 100%;
+  height: 600px;
+}
+
+.section-2 .right{
+  width: 100%;
+  height: 500px;
+}
+
 
 /* /Main */
 
@@ -109,30 +128,49 @@ main .container .card {
 }
 
 @media screen and (min-width:786px) {
-
+  .container {
+    width: 80%;
+  }
 
   header .container {
-    width: 90%;
+    width: 80%;
   }
 
   header .menu-right {
     display: block;
-
   }
+
   header .side-menu {
     display: none;
-
   }
 
+  .card-big .text{
+    width: 50%;
+    display: flex;
+  }
+
+  .card-big .phone{
+    display: flex;
+  }
 
   main .container .card-big {
     height: 330px;
   }
+  
+  main .container .row .card {
+    height: 330px;
+  }
+  
   main .container .card {
     height: 330px;
   }
-  main .container .row .card {
-    height: 330px;
+
+  main .section-2 .right{
+    width: 50%;
+  }
+
+  main .section-2 .left {
+    width: 50%;
   }
 }
 /* /Responsive */
