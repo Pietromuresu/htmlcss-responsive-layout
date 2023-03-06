@@ -135,11 +135,27 @@ main .container .card {
 .about-us .container .col-right {
   width: 100%;
   height: 500px;
-
 }
+
+
+.cta {
+  height: 500px;
+}
+
+.cta .content {
+  height: 400px;
+}
+
 /* /Main */
 
+/* Footer */
+  footer .container {
+    text-align: center;
+    height: 130px;
+  }
 
+
+/* /Footer */
 
 
 /* Responsive */
@@ -194,6 +210,18 @@ main .container .card {
 
   .about-us .container .col-right {
     width: 35%;
+  }
+
+ 
+  .cta .container {
+    width: 80%;
+    height: 500px;
+  }
+
+
+  footer .container {
+    width: 80%;
+    height: 500px;
   }
 }
 
@@ -250,5 +278,17 @@ main .container .card {
   .benefits .container-cards .card{
     width: calc(90% / 3);
   }
+
+  .cta .container {
+    width: 30%;
+    height: 500px;
+  }
+
+
+  footer .container {
+    width: 30%;
+    height: 500px;
+  }
+
 }
 /* /Responsive */
